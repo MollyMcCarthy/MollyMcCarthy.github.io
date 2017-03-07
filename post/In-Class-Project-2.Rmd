@@ -1,0 +1,208 @@
+---
+title: "In Class Assignment Feb 28"
+author: "Molly"
+date: "2/28/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. 
+```{r}
+ckmnodes = read.csv(file = "ckm_nodes.csv")
+dim(ckmnodes)
+colnames(ckmnodes)
+```
+
+2. 16 doctors never prescribed tetracycline. 121 values are NA. See table below for counts at the end of each month. 
+```{r}
+table(ckmnodes$adoption_date)
+names(which.max(table(ckmnodes$adoption_date)))
+library('plyr')
+count(ckmnodes, 'adoption_date')
+```
+3. 
+```{r}
+newvec = which(!is.na(ckmnodes$adoption_date))
+length(newvec)
+cleaned_nodes = ckmnodes[newvec,]
+head(cleaned_nodes)
+```
+4. 
+```{r}
+adopters = function(month, not.yet = FALSE){
+  if (not.yet == FALSE) {return (as.vector(cleaned_nodes$adoption_date ==  month))}
+  else {return (as.vector(cleaned_nodes$adoption_date > month | cleaned_nodes$adoption_date == "Inf"))}
+}
+sum(adopters(2))
+sum(adopters(month = 14, not.yet = TRUE))
+
+## for a particular month, this function gives the number of doctos who began prescribing that month, unless not.yet is true, in which case it will return a vector of the doctors who began prescribing after that month or never 
+```
+
+5. 
+```{r}
+ckmnetwork = read.table(file = "/Users/mollymccarthy/Downloads/ckm_network (2).dat")
+head(ckmnetwork)
+dim(ckmnetwork)
+
+newvec = which(!is.na(ckmnodes$adoption_date))
+clean_network = ckmnetwork[newvec, newvec]
+head(clean_network)
+dim(clean_network)
+```
+6. 
+```{r}
+numberofcontacts = apply(clean_network, 1, sum)
+is.vector(numberofcontacts)
+numberofcontacts[41]
+```
+7a.  
+```{r}
+count_peer_pressure = function(doctor){
+  length(which(cleaned_nodes$adoption_date[clean_network[,doctor]==1]<= cleaned_nodes$adoption_date[doctor]))
+}
+
+#this function finds all the contacts of doctor (clean_network[,doctor] ==1) and gives you their adoption date if that adoption date is less than or equal to the adoption date of doctor. It then gives the length of the resulting vector 
+count_peer_pressure(37)  
+```
+  
+```{r, eval = FALSE} 
+
+##INCORRECT ATTEMPTS AT CREATING PEER PRESSURE FUNCTION
+  contacts = which(clean_network[,doctor] == 1)  ##gives you a list of the contacts of the original doctor
+  return(length(contacts[cleaned_nodes$adoption_date < month & cleaned_nodes$adoption_date == month]))#now we want to take these contacts and return all of the contacts of doctor for whom cleaned_nodes$adoption_date <= month
+}
+
+count_peer_pressure(37, 5)
+
+
+
+for(i in 1:ncol(clean_network)){
+  which(clean_network[,i] == 1)
+}
+
+
+## cleaned_nodes$adoption_date[clean_network[,1] == 1] gives you the month in which the contacts of doctor 1 began prescribing 
+```
+7b. 
+```{r}
+prop_peer_pressure = function(doctor){length(which(cleaned_nodes$adoption_date[clean_network[,doctor] == 1] <= cleaned_nodes$adoption_date[doctor])) / length(cleaned_nodes$adoption_date[clean_network[,doctor] ==1]) 
+}
+#takes the function from 7a and divides it by the total number of contactss
+prop_peer_pressure(37)
+prop_peer_pressure(102)
+```
+8a. 
+```{r}
+
+samemonthprop = function(month){
+mean(apply(as.array(which(cleaned_nodes$adoption_date == month)), 1, prop_peer_pressure), na.rm = TRUE) 
+}
+##of all doctors who started prescribing in a particular month, what proportion of them had contacts who were already prescribing by that month 
+samemonthprop(8)
+
+latermonthsprop = function(month){
+  mean(apply(as.array(which(cleaned_nodes$adoption_date > month |  cleaned_nodes$adoption_date == "Inf")), 1, prop_peer_pressure), na.rm = TRUE)
+}
+latermonthsprop(8)
+#for all doctors who started prescribing after the month or never, what proportion of their contacts had already started prescribing 
+
+averaging.peer.pressure = function(month){
+  cbind(samemonthprop(month), latermonthsprop(month))
+}
+
+##puts two vectors together 
+```
+
+```{r, eval = FALSE}
+
+##INCORRECT ATTEMPTS AT CREATING FUNCTION 
+my_function = function(month, not.yet = FALSE){
+  if(not.yet == FALSE) {return (mean(apply(as.array(which(cleaned_nodes$adoption_date == month)), 1, prop_peer_pressure), na.rm = TRUE))}
+  else 
+    {return (mean(apply(as.array(which(cleaned_nodes$adoption_date > month |  cleaned_nodes$adoption_date == "Inf")), 1, prop_peer_pressure), na.rm = TRUE))
+  }
+}
+ ##if a doctor has begun prescribing by that month, then this function takes the mean proportion of contacts of that doctor who were prescribing on or before that month. If a doctor has not begun prescribing by that month, this function returns the average proportion of prescribers among that contact 
+
+my_function(8)
+```
+
+```{r, eval = FALSE}
+test = apply(as.array(which(cleaned_nodes$adoption_date ==8)), 1, prop_peer_pressure) ##all doctors who started prescribing in month 8, applies prop peer pressure function to all those doctors) 
+
+mean(test) #finds the average proportion of prescribers among the contacts of the doctors who began prescribing in month 8
+
+test2 = apply(as.array(which(cleaned_nodes$adoption_date > 8 | cleaned_nodes$adoption_date == "Inf")), 1, prop_peer_pressure) ##does same thing is other apply function but for doctors who prescribed after month 8 or never 
+
+mean(test2, na.rm = TRUE)
+
+
+
+
+doctors.in.month = which(cleaned_nodes$adoption_date == 5)
+
+?apply
+
+adopters = function(month, not.yet = FALSE){
+  if (not.yet == FALSE) {return (as.vector(cleaned_nodes$adoption_date ==  month))}
+  else {return (as.vector(cleaned_nodes$adoption_date > month | cleaned_nodes$adoption_date == "Inf"))}
+}
+
+
+as.vector(cleaned_nodes$adoption_date > 8 | cleaned_nodes$adoption_date == "Inf") #gives a vector of all of the doctors who started prescribing after month 8 or who never started prescribing 
+
+
+
+
+```
+
+8b. Compute the average proportions from (8a) for each month in the study. Use an apply function rather than a loop if you can. Plot the two average proportions from (8a) over time, and in a second plot show their difference. Do the doctors who adopt in a given month consistently have more contacts who are already prescribing than the non-adopters?
+
+```{r}
+all.month.prop = apply(as.array(1:17), 1, averaging.peer.pressure) ##apply the averaging.peer.pressure function for every month from 1 to 17
+
+samemonthprop = function(month){
+mean(apply(as.array(which(cleaned_nodes$adoption_date == month)), 1, prop_peer_pressure), na.rm = TRUE) 
+}
+
+latermonthsprop = function(month){
+  mean(apply(as.array(which(cleaned_nodes$adoption_date > month |  cleaned_nodes$adoption_date == "Inf")), 1, prop_peer_pressure), na.rm = TRUE)
+}
+
+all.month.same = apply(as.array(1:17), 1, samemonthprop)
+all.month.same
+
+all.month.later = apply(as.array(1:17), 1, latermonthsprop)
+all.month.later
+
+y1 = all.month.same
+y2 = all.month.later
+
+##one way to plot 
+plot(x = c(1:17), y1, ylim=range(c(y1,y2)), col = "red", xlab = "month", ylab = "proportion of contacts prescribing")
+par(new = TRUE)
+plot(x = c(1:17), y2, ylim = range(c(y1,y2)), col = "green", xlab = "month", ylab = "proportion of contacts prescribing")
+
+
+
+##alternate way to plot
+?data.frame
+
+d = data.frame(x = c(1:17), y1=all.month.same, y2=all.month.later)
+library(ggplot2)
+ggplot(d, aes(x=x, y=value, color=variable)) + 
+geom_point(aes(y=y1, col="y1", pch=2 ))+
+geom_point(aes(y=y2, col="y2", pch=1)) + scale_shape_identity() + labs(list(x="month", y="proportion of contacts who have already started prescribing"))
+```
+
+```{r}
+diff = all.month.same - all.month.later
+diff
+
+plot(diff)
+```
+

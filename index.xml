@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Molly McCarthy on Molly McCarthy</title>
-    <link>/index.xml</link>
+    <link>https://www.sullivanstatistics.com/index.xml</link>
     <description>Recent content in Molly McCarthy on Molly McCarthy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>A Plain Markdown Post</title>
-      <link>/post/2016-12-30-hello-markdown/</link>
+      <link>https://www.sullivanstatistics.com/post/2016-12-30-hello-markdown/</link>
       <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
       
-      <guid>/post/2016-12-30-hello-markdown/</guid>
+      <guid>https://www.sullivanstatistics.com/post/2016-12-30-hello-markdown/</guid>
       <description>&lt;p&gt;This is a post written in plain Markdown (&lt;code&gt;*.md&lt;/code&gt;) instead of R Markdown (&lt;code&gt;*.Rmd&lt;/code&gt;). The major differences are:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -43,69 +43,444 @@
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://www.sullivanstatistics.com/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://www.sullivanstatistics.com/about/</guid>
       <description>&lt;p&gt;This is a &amp;ldquo;hello world&amp;rdquo; example website for the &lt;a href=&#34;https://github.com/rstudio/blogdown&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt; package. The theme was forked from &lt;a href=&#34;https://github.com/jrutheiser/hugo-lithium-theme&#34; target=&#34;_blank&#34;&gt;@jrutheiser/hugo-lithium-theme&lt;/a&gt; and modified by &lt;a href=&#34;https://github.com/yihui/hugo-lithium-theme&#34; target=&#34;_blank&#34;&gt;Yihui Xie&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Lorem Ipsum</title>
+      <link>https://www.sullivanstatistics.com/post/2015-01-01-lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+      <guid>https://www.sullivanstatistics.com/post/2015-01-01-lorem-ipsum/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em&gt;magna aliqua&lt;/em&gt;. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Lorem Ipsum</title>
-      <link>/post/2015-01-01-lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      <title>In Class Assignment Feb 28</title>
+      <link>https://www.sullivanstatistics.com/post/In-Class-Project-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-01-lorem-ipsum/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em&gt;magna aliqua&lt;/em&gt;. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+      <guid>https://www.sullivanstatistics.com/post/In-Class-Project-2/</guid>
+      <description>&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ckmnodes = read.csv(file = &amp;quot;ckm_nodes.csv&amp;quot;)
+dim(ckmnodes)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 246  13&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;colnames(ckmnodes)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;city&amp;quot;                         &amp;quot;adoption_date&amp;quot;               
+##  [3] &amp;quot;medical_school&amp;quot;               &amp;quot;attend_meetings&amp;quot;             
+##  [5] &amp;quot;medical_journals&amp;quot;             &amp;quot;free_time_with&amp;quot;              
+##  [7] &amp;quot;discuss_medicine_socially&amp;quot;    &amp;quot;club_with_drs&amp;quot;               
+##  [9] &amp;quot;drs_among_three_best_friends&amp;quot; &amp;quot;practicing_here&amp;quot;             
+## [11] &amp;quot;office_visits_per_week&amp;quot;       &amp;quot;proximity_to_other_drs&amp;quot;      
+## [13] &amp;quot;specialty&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;16 doctors never prescribed tetracycline. 121 values are NA. See table below for counts at the end of each month.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(ckmnodes$adoption_date)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17 Inf 
+##  11   9   9  11  11  11  13   7   4   1   5   3   3   4   4   2   1  16&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(which.max(table(ckmnodes$adoption_date)))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Inf&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(&amp;#39;plyr&amp;#39;)
+count(ckmnodes, &amp;#39;adoption_date&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    adoption_date freq
+## 1              1   11
+## 2              2    9
+## 3              3    9
+## 4              4   11
+## 5              5   11
+## 6              6   11
+## 7              7   13
+## 8              8    7
+## 9              9    4
+## 10            10    1
+## 11            11    5
+## 12            12    3
+## 13            13    3
+## 14            14    4
+## 15            15    4
+## 16            16    2
+## 17            17    1
+## 18           Inf   16
+## 19            NA  121&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;newvec = which(!is.na(ckmnodes$adoption_date))
+length(newvec)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 125&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cleaned_nodes = ckmnodes[newvec,]
+head(cleaned_nodes)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##     city adoption_date medical_school attend_meetings medical_journals
+## 1 Peoria             1     1920--1929       specialty                9
+## 2 Peoria            12          1945+            none                5
+## 3 Peoria             8     1935--1939         general                7
+## 4 Peoria             9     1940--1944         general                6
+## 5 Peoria             9     1935--1939         general                4
+## 6 Peoria            10     1930--1934            none                7
+##   free_time_with discuss_medicine_socially club_with_drs
+## 1    non-doctors                        no            no
+## 2        doctors                       yes            no
+## 3        doctors                        no            no
+## 4    non-doctors                        no            no
+## 5    non-doctors                       yes            no
+## 6          split                       yes            no
+##   drs_among_three_best_friends practicing_here office_visits_per_week
+## 1                            0       20+ years               101--150
+## 2                            3         1- year                76--100
+## 3                            2    10--20 years                76--100
+## 4                            0     5--10 years                 51--75
+## 5                            1    10--20 years                 51--75
+## 6                            0    10--20 years               101--150
+##       proximity_to_other_drs    specialty
+## 1     in_building_and_office pediatrician
+## 2     in_building_and_office           GP
+## 3 in_building_but_not_office    internist
+## 4     in_building_and_office           GP
+## 5 in_building_but_not_office           GP
+## 6     in_building_and_office    internist&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;adopters = function(month, not.yet = FALSE){
+  if (not.yet == FALSE) {return (as.vector(cleaned_nodes$adoption_date ==  month))}
+  else {return (as.vector(cleaned_nodes$adoption_date &amp;gt; month | cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;))}
+}
+sum(adopters(2))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 9&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sum(adopters(month = 14, not.yet = TRUE))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 23&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## for a particular month, this function gives the number of doctos who began prescribing that month, unless not.yet is true, in which case it will return a vector of the doctors who began prescribing after that month or never &lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ckmnetwork = read.table(file = &amp;quot;/Users/mollymccarthy/Downloads/ckm_network (2).dat&amp;quot;)
+head(ckmnetwork)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   V1 V2 V3 V4 V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20
+## 1  0  0  0  0  0  0  0  1  0   0   0   0   0   0   0   0   0   0   0   0
+## 2  0  0  0  0  0  0  0  0  0   0   1   0   0   0   0   0   0   0   0   0
+## 3  0  0  0  0  0  0  0  0  1   0   0   0   0   1   0   1   0   0   0   1
+## 4  0  0  0  0  0  0  1  0  0   0   0   0   0   0   0   0   0   0   0   0
+## 5  0  0  0  0  0  0  0  0  0   1   0   1   0   0   1   0   0   0   0   0
+## 6  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+##   V21 V22 V23 V24 V25 V26 V27 V28 V29 V30 V31 V32 V33 V34 V35 V36 V37 V38
+## 1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 3   0   0   0   0   0   0   0   0   1   0   1   0   1   0   1   0   1   0
+## 4   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   1
+## 5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 6   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0   0   0   0
+##   V39 V40 V41 V42 V43 V44 V45 V46 V47 V48 V49 V50 V51 V52 V53 V54 V55 V56
+## 1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0
+## 3   0   0   0   0   0   1   0   1   0   0   0   0   1   0   0   0   0   0
+## 4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 5   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   1
+## 6   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   1
+##   V57 V58 V59 V60 V61 V62 V63 V64 V65 V66 V67 V68 V69 V70 V71 V72 V73 V74
+## 1   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 3   0   0   0   1   0   1   0   0   0   0   0   0   1   0   0   0   0   0
+## 4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0
+## 5   0   0   0   1   1   0   0   0   1   0   1   0   0   0   0   0   0   0
+## 6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+##   V75 V76 V77 V78 V79 V80 V81 V82 V83 V84 V85 V86 V87 V88 V89 V90 V91 V92
+## 1   0   0   0   1   0   0   0   0   0   0   0   0   1   0   0   1   0   0
+## 2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+## 3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+##   V93 V94 V95 V96 V97 V98 V99 V100 V101 V102 V103 V104 V105 V106 V107 V108
+## 1   0   0   0   0   0   0   0    0    0    0    0    0    0    0    0    0
+## 2   0   0   0   0   0   1   0    1    0    0    0    0    0    0    0    0
+## 3   0   0   0   0   0   0   0    0    0    0    0    0    0    0    0    0
+## 4   0   1   0   0   0   0   0    0    0    0    1    0    0    1    1    0
+## 5   0   0   0   0   0   0   1    0    0    0    0    0    0    0    0    0
+## 6   0   1   0   0   0   0   1    0    0    0    0    0    0    0    0    0
+##   V109 V110 V111 V112 V113 V114 V115 V116 V117 V118 V119 V120 V121 V122
+## 1    0    1    0    1    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V123 V124 V125 V126 V127 V128 V129 V130 V131 V132 V133 V134 V135 V136
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V137 V138 V139 V140 V141 V142 V143 V144 V145 V146 V147 V148 V149 V150
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V151 V152 V153 V154 V155 V156 V157 V158 V159 V160 V161 V162 V163 V164
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V165 V166 V167 V168 V169 V170 V171 V172 V173 V174 V175 V176 V177 V178
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V179 V180 V181 V182 V183 V184 V185 V186 V187 V188 V189 V190 V191 V192
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V193 V194 V195 V196 V197 V198 V199 V200 V201 V202 V203 V204 V205 V206
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V207 V208 V209 V210 V211 V212 V213 V214 V215 V216 V217 V218 V219 V220
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V221 V222 V223 V224 V225 V226 V227 V228 V229 V230 V231 V232 V233 V234
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V235 V236 V237 V238 V239 V240 V241 V242 V243 V244 V245 V246
+## 1    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dim(ckmnetwork)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 246 246&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;newvec = which(!is.na(ckmnodes$adoption_date))
+clean_network = ckmnetwork[newvec, newvec]
+head(clean_network)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   V1 V2 V3 V4 V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20
+## 1  0  0  0  0  0  0  0  1  0   0   0   0   0   0   0   0   0   0   0   0
+## 2  0  0  0  0  0  0  0  0  0   0   1   0   0   0   0   0   0   0   0   0
+## 3  0  0  0  0  0  0  0  0  1   0   0   0   0   1   0   1   0   0   0   1
+## 4  0  0  0  0  0  0  1  0  0   0   0   0   0   0   0   0   0   0   0   0
+## 5  0  0  0  0  0  0  0  0  0   1   0   1   0   0   1   0   0   0   0   0
+## 6  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+##   V21 V22 V23 V24 V25 V26 V27 V28 V29 V30 V31 V32 V33 V34 V35 V36 V37 V38
+## 1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 3   0   0   0   0   0   0   0   0   1   0   1   0   1   0   1   0   1   0
+## 4   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   1
+## 5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 6   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0   0   0   0
+##   V39 V58 V70 V72 V73 V74 V75 V76 V77 V78 V79 V80 V81 V82 V91 V92 V93 V94
+## 1   0   1   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0
+## 2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+## 5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+## 6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+##   V95 V96 V97 V98 V105 V108 V119 V121 V122 V123 V124 V125 V126 V127 V128
+## 1   0   0   0   0    0    0    0    0    0    0    0    0    0    0    0
+## 2   0   0   0   1    0    0    0    0    0    0    0    0    0    0    0
+## 3   0   0   0   0    0    0    0    0    0    0    0    0    0    0    0
+## 4   0   0   0   0    0    0    0    0    0    0    0    0    0    0    0
+## 5   0   0   0   0    0    0    0    0    0    0    0    0    0    0    0
+## 6   0   0   0   0    0    0    0    0    0    0    0    0    0    0    0
+##   V129 V130 V131 V132 V133 V134 V135 V136 V137 V151 V152 V153 V154 V155
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V156 V168 V169 V170 V171 V172 V173 V174 V175 V176 V177 V178 V179 V180
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V181 V182 V195 V196 V197 V198 V199 V200 V212 V213 V214 V215 V216 V217
+## 1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+##   V218 V219 V220 V221 V222 V223 V224 V225 V226 V227 V229 V241
+## 1    0    0    0    0    0    0    0    0    0    0    0    0
+## 2    0    0    0    0    0    0    0    0    0    0    0    0
+## 3    0    0    0    0    0    0    0    0    0    0    0    0
+## 4    0    0    0    0    0    0    0    0    0    0    0    0
+## 5    0    0    0    0    0    0    0    0    0    0    0    0
+## 6    0    0    0    0    0    0    0    0    0    0    0    0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dim(clean_network)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 125 125&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;numberofcontacts = apply(clean_network, 1, sum)
+is.vector(numberofcontacts)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;numberofcontacts[41]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 70 
+##  3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;7a.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;count_peer_pressure = function(doctor){
+  length(which(cleaned_nodes$adoption_date[clean_network[,doctor]==1]&amp;lt;= cleaned_nodes$adoption_date[doctor]))
+}
+
+#this function finds all the contacts of doctor (clean_network[,doctor] ==1) and gives you their adoption date if that adoption date is less than or equal to the adoption date of doctor. It then gives the length of the resulting vector 
+count_peer_pressure(37)  &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;##INCORRECT ATTEMPTS AT CREATING PEER PRESSURE FUNCTION
+  contacts = which(clean_network[,doctor] == 1)  ##gives you a list of the contacts of the original doctor
+  return(length(contacts[cleaned_nodes$adoption_date &amp;lt; month &amp;amp; cleaned_nodes$adoption_date == month]))#now we want to take these contacts and return all of the contacts of doctor for whom cleaned_nodes$adoption_date &amp;lt;= month
+}
+
+count_peer_pressure(37, 5)
+
+
+
+for(i in 1:ncol(clean_network)){
+  which(clean_network[,i] == 1)
+}
+
+
+## cleaned_nodes$adoption_date[clean_network[,1] == 1] gives you the month in which the contacts of doctor 1 began prescribing &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;7b.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;prop_peer_pressure = function(doctor){length(which(cleaned_nodes$adoption_date[clean_network[,doctor] == 1] &amp;lt;= cleaned_nodes$adoption_date[doctor])) / length(cleaned_nodes$adoption_date[clean_network[,doctor] ==1]) 
+}
+#takes the function from 7a and divides it by the total number of contactss
+prop_peer_pressure(37)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.8&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;prop_peer_pressure(102)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] NaN&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;8a.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;samemonthprop = function(month){
+mean(apply(as.array(which(cleaned_nodes$adoption_date == month)), 1, prop_peer_pressure), na.rm = TRUE) 
+}
+##of all doctors who started prescribing in a particular month, what proportion of them had contacts who were already prescribing by that month 
+samemonthprop(8)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.7477891&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;latermonthsprop = function(month){
+  mean(apply(as.array(which(cleaned_nodes$adoption_date &amp;gt; month |  cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;)), 1, prop_peer_pressure), na.rm = TRUE)
+}
+latermonthsprop(8)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.8752137&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#for all doctors who started prescribing after the month or never, what proportion of their contacts had already started prescribing 
+
+averaging.peer.pressure = function(month){
+  cbind(samemonthprop(month), latermonthsprop(month))
+}
+
+##puts two vectors together &lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;##INCORRECT ATTEMPTS AT CREATING FUNCTION 
+my_function = function(month, not.yet = FALSE){
+  if(not.yet == FALSE) {return (mean(apply(as.array(which(cleaned_nodes$adoption_date == month)), 1, prop_peer_pressure), na.rm = TRUE))}
+  else 
+    {return (mean(apply(as.array(which(cleaned_nodes$adoption_date &amp;gt; month |  cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;)), 1, prop_peer_pressure), na.rm = TRUE))
+  }
+}
+ ##if a doctor has begun prescribing by that month, then this function takes the mean proportion of contacts of that doctor who were prescribing on or before that month. If a doctor has not begun prescribing by that month, this function returns the average proportion of prescribers among that contact 
+
+my_function(8)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;test = apply(as.array(which(cleaned_nodes$adoption_date ==8)), 1, prop_peer_pressure) ##all doctors who started prescribing in month 8, applies prop peer pressure function to all those doctors) 
+
+mean(test) #finds the average proportion of prescribers among the contacts of the doctors who began prescribing in month 8
+
+test2 = apply(as.array(which(cleaned_nodes$adoption_date &amp;gt; 8 | cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;)), 1, prop_peer_pressure) ##does same thing is other apply function but for doctors who prescribed after month 8 or never 
+
+mean(test2, na.rm = TRUE)
+
+
+
+
+doctors.in.month = which(cleaned_nodes$adoption_date == 5)
+
+?apply
+
+adopters = function(month, not.yet = FALSE){
+  if (not.yet == FALSE) {return (as.vector(cleaned_nodes$adoption_date ==  month))}
+  else {return (as.vector(cleaned_nodes$adoption_date &amp;gt; month | cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;))}
+}
+
+
+as.vector(cleaned_nodes$adoption_date &amp;gt; 8 | cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;) #gives a vector of all of the doctors who started prescribing after month 8 or who never started prescribing &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;8b. Compute the average proportions from (8a) for each month in the study. Use an apply function rather than a loop if you can. Plot the two average proportions from (8a) over time, and in a second plot show their difference. Do the doctors who adopt in a given month consistently have more contacts who are already prescribing than the non-adopters?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.month.prop = apply(as.array(1:17), 1, averaging.peer.pressure) ##apply the averaging.peer.pressure function for every month from 1 to 17
+
+samemonthprop = function(month){
+mean(apply(as.array(which(cleaned_nodes$adoption_date == month)), 1, prop_peer_pressure), na.rm = TRUE) 
+}
+
+latermonthsprop = function(month){
+  mean(apply(as.array(which(cleaned_nodes$adoption_date &amp;gt; month |  cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;)), 1, prop_peer_pressure), na.rm = TRUE)
+}
+
+all.month.same = apply(as.array(1:17), 1, samemonthprop)
+all.month.same&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.2318182 0.2370851 0.2623106 0.4525000 0.2698052 0.7060606 0.7743590
+##  [8] 0.7477891 0.7666667 1.0000000 0.9166667 0.5000000 0.6666667 0.8750000
+## [15] 1.0000000 0.5000000 0.6666667&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.month.later = apply(as.array(1:17), 1, latermonthsprop)
+all.month.later&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.6382065 0.6746720 0.7109236 0.7428277 0.8171599 0.8378733 0.8558230
+##  [8] 0.8752137 0.8842593 0.8809524 0.8763441 0.9022989 0.9294872 0.9393939
+## [15] 0.9259259 0.9791667 1.0000000&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;y1 = all.month.same
+y2 = all.month.later
+
+##one way to plot 
+plot(x = c(1:17), y1, ylim=range(c(y1,y2)), col = &amp;quot;red&amp;quot;, xlab = &amp;quot;month&amp;quot;, ylab = &amp;quot;proportion of contacts prescribing&amp;quot;)
+par(new = TRUE)
+plot(x = c(1:17), y2, ylim = range(c(y1,y2)), col = &amp;quot;green&amp;quot;, xlab = &amp;quot;month&amp;quot;, ylab = &amp;quot;proportion of contacts prescribing&amp;quot;)
+
+
+
+##alternate way to plot
+?data.frame
+
+d = data.frame(x = c(1:17), y1=all.month.same, y2=all.month.later)
+library(ggplot2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.3.2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.sullivanstatistics.com/post/In-Class-Project-2_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(d, aes(x=x, y=value, color=variable)) + 
+geom_point(aes(y=y1, col=&amp;quot;y1&amp;quot;, pch=2 ))+
+geom_point(aes(y=y2, col=&amp;quot;y2&amp;quot;, pch=1)) + scale_shape_identity() + labs(list(x=&amp;quot;month&amp;quot;, y=&amp;quot;proportion of contacts who have already started prescribing&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.sullivanstatistics.com/post/In-Class-Project-2_files/figure-html/unnamed-chunk-13-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diff = all.month.same - all.month.later
+diff&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] -0.40638829 -0.43758691 -0.44861299 -0.29032775 -0.54735467
+##  [6] -0.13181268 -0.08146401 -0.12742456 -0.11759259  0.11904762
+## [11]  0.04032258 -0.40229885 -0.26282051 -0.06439394  0.07407407
+## [16] -0.47916667 -0.33333333&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(diff)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.sullivanstatistics.com/post/In-Class-Project-2_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

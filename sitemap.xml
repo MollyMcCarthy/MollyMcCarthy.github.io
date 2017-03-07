@@ -4,7 +4,7 @@
     
     
     <url>
-      <loc>/post/2016-12-30-hello-markdown/</loc>
+      <loc>https://www.sullivanstatistics.com/post/2016-12-30-hello-markdown/</loc>
       <lastmod>2016-12-30T21:49:57-07:00</lastmod>
     </url>
     
@@ -12,7 +12,7 @@
     
     
     <url>
-      <loc>/about/</loc>
+      <loc>https://www.sullivanstatistics.com/about/</loc>
       <lastmod>2016-05-05T21:48:51-07:00</lastmod>
     </url>
     
@@ -20,34 +20,25 @@
     
     
     <url>
-      <loc>/post/2015-07-23-r-rmarkdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>/post/2015-01-01-lorem-ipsum/</loc>
+      <loc>https://www.sullivanstatistics.com/post/2015-01-01-lorem-ipsum/</loc>
       <lastmod>2015-01-01T13:09:13-06:00</lastmod>
     </url>
     
   
     
     
+  
+    
+    
     <url>
-      <loc>/categories/</loc>
-      <priority>0</priority>
+      <loc>https://www.sullivanstatistics.com/post/In-Class-Project-2/</loc>
     </url>
     
   
     
     
-  
-    
-    
     <url>
-      <loc>/</loc>
+      <loc>https://www.sullivanstatistics.com/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -56,52 +47,8 @@
     
     
     <url>
-      <loc>/tags/plot/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>/post/</loc>
+      <loc>https://www.sullivanstatistics.com/post/</loc>
       <lastmod>2016-12-30T21:49:57-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>/categories/r/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>/tags/r-markdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>/tags/regression/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>/tags/</loc>
       <priority>0</priority>
     </url>
     

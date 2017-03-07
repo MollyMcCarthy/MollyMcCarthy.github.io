@@ -1,88 +1,227 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Molly McCarthy</title>
-    <link>https://www.sullivanstatistics.com/post/index.xml</link>
-    <description>Recent content in Posts on Molly McCarthy</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016 Molly McCarthy</copyright>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
-    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.18.1" />
+  <meta name="author" content="Molly McCarthy">
+  <meta name="description" content="Public Health Undergraduate">
+
+  
+  
+  
+  
     
-    <item>
-      <title>A Plain Markdown Post</title>
-      <link>https://www.sullivanstatistics.com/post/2016-12-30-hello-markdown/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      
-      <guid>https://www.sullivanstatistics.com/post/2016-12-30-hello-markdown/</guid>
-      <description>&lt;p&gt;This is a post written in plain Markdown (&lt;code&gt;*.md&lt;/code&gt;) instead of R Markdown (&lt;code&gt;*.Rmd&lt;/code&gt;). The major differences are:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (&lt;code&gt;```{r}&lt;/code&gt;);&lt;/li&gt;
-&lt;li&gt;A plain Markdown post is rendered through &lt;a href=&#34;https://gohugo.io/overview/configuration/&#34; target=&#34;_blank&#34;&gt;Blackfriday&lt;/a&gt;, and an R Markdown document is compiled by &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;http://pandoc.org&#34; target=&#34;_blank&#34;&gt;Pandoc&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown. For example, you can write a task list with Blackfriday but not with Pandoc:&lt;/p&gt;
-
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Write an R package.&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Write a book.&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; &amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Profit!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Similarly, Blackfriday does not support LaTeX math and Pandoc does. I have added the MathJax support to this theme (&lt;a href=&#34;https://github.com/yihui/hugo-lithium-theme&#34; target=&#34;_blank&#34;&gt;hugo-lithium-theme&lt;/a&gt;) but there is a caveat for plain Markdown posts: you have to include inline math expressions in  a pair of escaped parentheses &lt;code&gt;\( \)&lt;/code&gt; instead of dollar signs &lt;code&gt;$ $&lt;/code&gt;, e.g. &lt;code&gt;\(S_n = \sum_{i=1}^n X_i\)&lt;/code&gt;. For R Markdown posts, you can use &lt;code&gt;$ $&lt;/code&gt; to write inline math expressions.&lt;/p&gt;
-
-&lt;p&gt;When creating a new post, you have to decide whether the post format is Markdown or R Markdown, and this can be done via the &lt;code&gt;rmd&lt;/code&gt; argument of the function &lt;code&gt;blogdown::new_post()&lt;/code&gt;, e.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::new_post(&amp;quot;Post Title&amp;quot;, rmd = FALSE)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
     
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>https://www.sullivanstatistics.com/post/2015-01-01-lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      
-      <guid>https://www.sullivanstatistics.com/post/2015-01-01-lorem-ipsum/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em&gt;magna aliqua&lt;/em&gt;. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</description>
-    </item>
+    <link rel="stylesheet" href="/css/highlight.min.css">
     
-    <item>
-      <title>In Class Assignment Feb 28</title>
-      <link>https://www.sullivanstatistics.com/post/In-Class-Project-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+
+  <link rel="alternate" href="https://www.sullivanstatistics.com/index.xml" type="application/rss+xml" title="Molly McCarthy">
+  <link rel="feed" href="https://www.sullivanstatistics.com/index.xml" type="application/rss+xml" title="Molly McCarthy">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://www.sullivanstatistics.com/post/In-Class-Project-2/">
+
+  
+
+  <title>In Class Assignment Feb 28 | Molly McCarthy</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Molly McCarthy</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
       
-      <guid>https://www.sullivanstatistics.com/post/In-Class-Project-2/</guid>
-      <description>&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ckmnodes = read.csv(file = &amp;quot;ckm_nodes.csv&amp;quot;)
-dim(ckmnodes)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 246  13&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;colnames(ckmnodes)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;city&amp;quot;                         &amp;quot;adoption_date&amp;quot;               
-##  [3] &amp;quot;medical_school&amp;quot;               &amp;quot;attend_meetings&amp;quot;             
-##  [5] &amp;quot;medical_journals&amp;quot;             &amp;quot;free_time_with&amp;quot;              
-##  [7] &amp;quot;discuss_medicine_socially&amp;quot;    &amp;quot;club_with_drs&amp;quot;               
-##  [9] &amp;quot;drs_among_three_best_friends&amp;quot; &amp;quot;practicing_here&amp;quot;             
-## [11] &amp;quot;office_visits_per_week&amp;quot;       &amp;quot;proximity_to_other_drs&amp;quot;      
-## [13] &amp;quot;specialty&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;16 doctors never prescribed tetracycline. 121 values are NA. See table below for counts at the end of each month.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(ckmnodes$adoption_date)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+  <div class="article-container">
+    <h1 itemprop="name">In Class Assignment Feb 28</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Mon, Jan 1, 0001
+    </time>
+  </span>
+
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.sullivanstatistics.com%2fpost%2fIn-Class-Project-2%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=In%20Class%20Assignment%20Feb%2028&amp;url=https%3a%2f%2fwww.sullivanstatistics.com%2fpost%2fIn-Class-Project-2%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.sullivanstatistics.com%2fpost%2fIn-Class-Project-2%2f&amp;title=In%20Class%20Assignment%20Feb%2028"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fwww.sullivanstatistics.com%2fpost%2fIn-Class-Project-2%2f&amp;title=In%20Class%20Assignment%20Feb%2028"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=In%20Class%20Assignment%20Feb%2028&amp;body=https%3a%2f%2fwww.sullivanstatistics.com%2fpost%2fIn-Class-Project-2%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      <ol style="list-style-type: decimal">
+<li></li>
+</ol>
+<pre class="r"><code>ckmnodes = read.csv(file = &quot;ckm_nodes.csv&quot;)
+dim(ckmnodes)</code></pre>
+<pre><code>## [1] 246  13</code></pre>
+<pre class="r"><code>colnames(ckmnodes)</code></pre>
+<pre><code>##  [1] &quot;city&quot;                         &quot;adoption_date&quot;               
+##  [3] &quot;medical_school&quot;               &quot;attend_meetings&quot;             
+##  [5] &quot;medical_journals&quot;             &quot;free_time_with&quot;              
+##  [7] &quot;discuss_medicine_socially&quot;    &quot;club_with_drs&quot;               
+##  [9] &quot;drs_among_three_best_friends&quot; &quot;practicing_here&quot;             
+## [11] &quot;office_visits_per_week&quot;       &quot;proximity_to_other_drs&quot;      
+## [13] &quot;specialty&quot;</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>16 doctors never prescribed tetracycline. 121 values are NA. See table below for counts at the end of each month.</li>
+</ol>
+<pre class="r"><code>table(ckmnodes$adoption_date)</code></pre>
+<pre><code>## 
 ##   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17 Inf 
-##  11   9   9  11  11  11  13   7   4   1   5   3   3   4   4   2   1  16&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(which.max(table(ckmnodes$adoption_date)))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Inf&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(&amp;#39;plyr&amp;#39;)
-count(ckmnodes, &amp;#39;adoption_date&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    adoption_date freq
+##  11   9   9  11  11  11  13   7   4   1   5   3   3   4   4   2   1  16</code></pre>
+<pre class="r"><code>names(which.max(table(ckmnodes$adoption_date)))</code></pre>
+<pre><code>## [1] &quot;Inf&quot;</code></pre>
+<pre class="r"><code>library(&#39;plyr&#39;)
+count(ckmnodes, &#39;adoption_date&#39;)</code></pre>
+<pre><code>##    adoption_date freq
 ## 1              1   11
 ## 2              2    9
 ## 3              3    9
@@ -101,16 +240,16 @@ count(ckmnodes, &amp;#39;adoption_date&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 ## 16            16    2
 ## 17            17    1
 ## 18           Inf   16
-## 19            NA  121&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;newvec = which(!is.na(ckmnodes$adoption_date))
-length(newvec)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 125&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cleaned_nodes = ckmnodes[newvec,]
-head(cleaned_nodes)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##     city adoption_date medical_school attend_meetings medical_journals
+## 19            NA  121</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li></li>
+</ol>
+<pre class="r"><code>newvec = which(!is.na(ckmnodes$adoption_date))
+length(newvec)</code></pre>
+<pre><code>## [1] 125</code></pre>
+<pre class="r"><code>cleaned_nodes = ckmnodes[newvec,]
+head(cleaned_nodes)</code></pre>
+<pre><code>##     city adoption_date medical_school attend_meetings medical_journals
 ## 1 Peoria             1     1920--1929       specialty                9
 ## 2 Peoria            12          1945+            none                5
 ## 3 Peoria             8     1935--1939         general                7
@@ -137,25 +276,25 @@ head(cleaned_nodes)&lt;/code&gt;&lt;/pre&gt;
 ## 3 in_building_but_not_office    internist
 ## 4     in_building_and_office           GP
 ## 5 in_building_but_not_office           GP
-## 6     in_building_and_office    internist&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;adopters = function(month, not.yet = FALSE){
+## 6     in_building_and_office    internist</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li></li>
+</ol>
+<pre class="r"><code>adopters = function(month, not.yet = FALSE){
   if (not.yet == FALSE) {return (as.vector(cleaned_nodes$adoption_date ==  month))}
-  else {return (as.vector(cleaned_nodes$adoption_date &amp;gt; month | cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;))}
+  else {return (as.vector(cleaned_nodes$adoption_date &gt; month | cleaned_nodes$adoption_date == &quot;Inf&quot;))}
 }
-sum(adopters(2))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 9&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sum(adopters(month = 14, not.yet = TRUE))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 23&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## for a particular month, this function gives the number of doctos who began prescribing that month, unless not.yet is true, in which case it will return a vector of the doctors who began prescribing after that month or never &lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ckmnetwork = read.table(file = &amp;quot;/Users/mollymccarthy/Downloads/ckm_network (2).dat&amp;quot;)
-head(ckmnetwork)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##   V1 V2 V3 V4 V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20
+sum(adopters(2))</code></pre>
+<pre><code>## [1] 9</code></pre>
+<pre class="r"><code>sum(adopters(month = 14, not.yet = TRUE))</code></pre>
+<pre><code>## [1] 23</code></pre>
+<pre class="r"><code>## for a particular month, this function gives the number of doctos who began prescribing that month, unless not.yet is true, in which case it will return a vector of the doctors who began prescribing after that month or never </code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li></li>
+</ol>
+<pre class="r"><code>ckmnetwork = read.table(file = &quot;/Users/mollymccarthy/Downloads/ckm_network (2).dat&quot;)
+head(ckmnetwork)</code></pre>
+<pre><code>##   V1 V2 V3 V4 V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20
 ## 1  0  0  0  0  0  0  0  1  0   0   0   0   0   0   0   0   0   0   0   0
 ## 2  0  0  0  0  0  0  0  0  0   0   1   0   0   0   0   0   0   0   0   0
 ## 3  0  0  0  0  0  0  0  0  1   0   0   0   0   1   0   1   0   0   0   1
@@ -266,13 +405,13 @@ head(ckmnetwork)&lt;/code&gt;&lt;/pre&gt;
 ## 3    0    0    0    0    0    0    0    0    0    0    0    0
 ## 4    0    0    0    0    0    0    0    0    0    0    0    0
 ## 5    0    0    0    0    0    0    0    0    0    0    0    0
-## 6    0    0    0    0    0    0    0    0    0    0    0    0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dim(ckmnetwork)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 246 246&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;newvec = which(!is.na(ckmnodes$adoption_date))
+## 6    0    0    0    0    0    0    0    0    0    0    0    0</code></pre>
+<pre class="r"><code>dim(ckmnetwork)</code></pre>
+<pre><code>## [1] 246 246</code></pre>
+<pre class="r"><code>newvec = which(!is.na(ckmnodes$adoption_date))
 clean_network = ckmnetwork[newvec, newvec]
-head(clean_network)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##   V1 V2 V3 V4 V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20
+head(clean_network)</code></pre>
+<pre><code>##   V1 V2 V3 V4 V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20
 ## 1  0  0  0  0  0  0  0  1  0   0   0   0   0   0   0   0   0   0   0   0
 ## 2  0  0  0  0  0  0  0  0  0   0   1   0   0   0   0   0   0   0   0   0
 ## 3  0  0  0  0  0  0  0  0  1   0   0   0   0   1   0   1   0   0   0   1
@@ -327,29 +466,29 @@ head(clean_network)&lt;/code&gt;&lt;/pre&gt;
 ## 3    0    0    0    0    0    0    0    0    0    0    0    0
 ## 4    0    0    0    0    0    0    0    0    0    0    0    0
 ## 5    0    0    0    0    0    0    0    0    0    0    0    0
-## 6    0    0    0    0    0    0    0    0    0    0    0    0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dim(clean_network)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 125 125&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;numberofcontacts = apply(clean_network, 1, sum)
-is.vector(numberofcontacts)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;numberofcontacts[41]&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 70 
-##  3&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;7a.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;count_peer_pressure = function(doctor){
-  length(which(cleaned_nodes$adoption_date[clean_network[,doctor]==1]&amp;lt;= cleaned_nodes$adoption_date[doctor]))
+## 6    0    0    0    0    0    0    0    0    0    0    0    0</code></pre>
+<pre class="r"><code>dim(clean_network)</code></pre>
+<pre><code>## [1] 125 125</code></pre>
+<ol start="6" style="list-style-type: decimal">
+<li></li>
+</ol>
+<pre class="r"><code>numberofcontacts = apply(clean_network, 1, sum)
+is.vector(numberofcontacts)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre class="r"><code>numberofcontacts[41]</code></pre>
+<pre><code>## 70 
+##  3</code></pre>
+<p>7a.</p>
+<pre class="r"><code>count_peer_pressure = function(doctor){
+  length(which(cleaned_nodes$adoption_date[clean_network[,doctor]==1]&lt;= cleaned_nodes$adoption_date[doctor]))
 }
 
 #this function finds all the contacts of doctor (clean_network[,doctor] ==1) and gives you their adoption date if that adoption date is less than or equal to the adoption date of doctor. It then gives the length of the resulting vector 
-count_peer_pressure(37)  &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 4&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;##INCORRECT ATTEMPTS AT CREATING PEER PRESSURE FUNCTION
+count_peer_pressure(37)  </code></pre>
+<pre><code>## [1] 4</code></pre>
+<pre class="r"><code>##INCORRECT ATTEMPTS AT CREATING PEER PRESSURE FUNCTION
   contacts = which(clean_network[,doctor] == 1)  ##gives you a list of the contacts of the original doctor
-  return(length(contacts[cleaned_nodes$adoption_date &amp;lt; month &amp;amp; cleaned_nodes$adoption_date == month]))#now we want to take these contacts and return all of the contacts of doctor for whom cleaned_nodes$adoption_date &amp;lt;= month
+  return(length(contacts[cleaned_nodes$adoption_date &lt; month &amp; cleaned_nodes$adoption_date == month]))#now we want to take these contacts and return all of the contacts of doctor for whom cleaned_nodes$adoption_date &lt;= month
 }
 
 count_peer_pressure(37, 5)
@@ -361,49 +500,49 @@ for(i in 1:ncol(clean_network)){
 }
 
 
-## cleaned_nodes$adoption_date[clean_network[,1] == 1] gives you the month in which the contacts of doctor 1 began prescribing &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;7b.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;prop_peer_pressure = function(doctor){length(which(cleaned_nodes$adoption_date[clean_network[,doctor] == 1] &amp;lt;= cleaned_nodes$adoption_date[doctor])) / length(cleaned_nodes$adoption_date[clean_network[,doctor] ==1]) 
+## cleaned_nodes$adoption_date[clean_network[,1] == 1] gives you the month in which the contacts of doctor 1 began prescribing </code></pre>
+<p>7b.</p>
+<pre class="r"><code>prop_peer_pressure = function(doctor){length(which(cleaned_nodes$adoption_date[clean_network[,doctor] == 1] &lt;= cleaned_nodes$adoption_date[doctor])) / length(cleaned_nodes$adoption_date[clean_network[,doctor] ==1]) 
 }
 #takes the function from 7a and divides it by the total number of contactss
-prop_peer_pressure(37)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 0.8&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;prop_peer_pressure(102)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] NaN&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;8a.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;samemonthprop = function(month){
+prop_peer_pressure(37)</code></pre>
+<pre><code>## [1] 0.8</code></pre>
+<pre class="r"><code>prop_peer_pressure(102)</code></pre>
+<pre><code>## [1] NaN</code></pre>
+<p>8a.</p>
+<pre class="r"><code>samemonthprop = function(month){
 mean(apply(as.array(which(cleaned_nodes$adoption_date == month)), 1, prop_peer_pressure), na.rm = TRUE) 
 }
 ##of all doctors who started prescribing in a particular month, what proportion of them had contacts who were already prescribing by that month 
-samemonthprop(8)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 0.7477891&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;latermonthsprop = function(month){
-  mean(apply(as.array(which(cleaned_nodes$adoption_date &amp;gt; month |  cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;)), 1, prop_peer_pressure), na.rm = TRUE)
+samemonthprop(8)</code></pre>
+<pre><code>## [1] 0.7477891</code></pre>
+<pre class="r"><code>latermonthsprop = function(month){
+  mean(apply(as.array(which(cleaned_nodes$adoption_date &gt; month |  cleaned_nodes$adoption_date == &quot;Inf&quot;)), 1, prop_peer_pressure), na.rm = TRUE)
 }
-latermonthsprop(8)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 0.8752137&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#for all doctors who started prescribing after the month or never, what proportion of their contacts had already started prescribing 
+latermonthsprop(8)</code></pre>
+<pre><code>## [1] 0.8752137</code></pre>
+<pre class="r"><code>#for all doctors who started prescribing after the month or never, what proportion of their contacts had already started prescribing 
 
 averaging.peer.pressure = function(month){
   cbind(samemonthprop(month), latermonthsprop(month))
 }
 
-##puts two vectors together &lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;##INCORRECT ATTEMPTS AT CREATING FUNCTION 
+##puts two vectors together </code></pre>
+<pre class="r"><code>##INCORRECT ATTEMPTS AT CREATING FUNCTION 
 my_function = function(month, not.yet = FALSE){
   if(not.yet == FALSE) {return (mean(apply(as.array(which(cleaned_nodes$adoption_date == month)), 1, prop_peer_pressure), na.rm = TRUE))}
   else 
-    {return (mean(apply(as.array(which(cleaned_nodes$adoption_date &amp;gt; month |  cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;)), 1, prop_peer_pressure), na.rm = TRUE))
+    {return (mean(apply(as.array(which(cleaned_nodes$adoption_date &gt; month |  cleaned_nodes$adoption_date == &quot;Inf&quot;)), 1, prop_peer_pressure), na.rm = TRUE))
   }
 }
  ##if a doctor has begun prescribing by that month, then this function takes the mean proportion of contacts of that doctor who were prescribing on or before that month. If a doctor has not begun prescribing by that month, this function returns the average proportion of prescribers among that contact 
 
-my_function(8)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;test = apply(as.array(which(cleaned_nodes$adoption_date ==8)), 1, prop_peer_pressure) ##all doctors who started prescribing in month 8, applies prop peer pressure function to all those doctors) 
+my_function(8)</code></pre>
+<pre class="r"><code>test = apply(as.array(which(cleaned_nodes$adoption_date ==8)), 1, prop_peer_pressure) ##all doctors who started prescribing in month 8, applies prop peer pressure function to all those doctors) 
 
 mean(test) #finds the average proportion of prescribers among the contacts of the doctors who began prescribing in month 8
 
-test2 = apply(as.array(which(cleaned_nodes$adoption_date &amp;gt; 8 | cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;)), 1, prop_peer_pressure) ##does same thing is other apply function but for doctors who prescribed after month 8 or never 
+test2 = apply(as.array(which(cleaned_nodes$adoption_date &gt; 8 | cleaned_nodes$adoption_date == &quot;Inf&quot;)), 1, prop_peer_pressure) ##does same thing is other apply function but for doctors who prescribed after month 8 or never 
 
 mean(test2, na.rm = TRUE)
 
@@ -416,39 +555,39 @@ doctors.in.month = which(cleaned_nodes$adoption_date == 5)
 
 adopters = function(month, not.yet = FALSE){
   if (not.yet == FALSE) {return (as.vector(cleaned_nodes$adoption_date ==  month))}
-  else {return (as.vector(cleaned_nodes$adoption_date &amp;gt; month | cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;))}
+  else {return (as.vector(cleaned_nodes$adoption_date &gt; month | cleaned_nodes$adoption_date == &quot;Inf&quot;))}
 }
 
 
-as.vector(cleaned_nodes$adoption_date &amp;gt; 8 | cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;) #gives a vector of all of the doctors who started prescribing after month 8 or who never started prescribing &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;8b. Compute the average proportions from (8a) for each month in the study. Use an apply function rather than a loop if you can. Plot the two average proportions from (8a) over time, and in a second plot show their difference. Do the doctors who adopt in a given month consistently have more contacts who are already prescribing than the non-adopters?&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.month.prop = apply(as.array(1:17), 1, averaging.peer.pressure) ##apply the averaging.peer.pressure function for every month from 1 to 17
+as.vector(cleaned_nodes$adoption_date &gt; 8 | cleaned_nodes$adoption_date == &quot;Inf&quot;) #gives a vector of all of the doctors who started prescribing after month 8 or who never started prescribing </code></pre>
+<p>8b. Compute the average proportions from (8a) for each month in the study. Use an apply function rather than a loop if you can. Plot the two average proportions from (8a) over time, and in a second plot show their difference. Do the doctors who adopt in a given month consistently have more contacts who are already prescribing than the non-adopters?</p>
+<pre class="r"><code>all.month.prop = apply(as.array(1:17), 1, averaging.peer.pressure) ##apply the averaging.peer.pressure function for every month from 1 to 17
 
 samemonthprop = function(month){
 mean(apply(as.array(which(cleaned_nodes$adoption_date == month)), 1, prop_peer_pressure), na.rm = TRUE) 
 }
 
 latermonthsprop = function(month){
-  mean(apply(as.array(which(cleaned_nodes$adoption_date &amp;gt; month |  cleaned_nodes$adoption_date == &amp;quot;Inf&amp;quot;)), 1, prop_peer_pressure), na.rm = TRUE)
+  mean(apply(as.array(which(cleaned_nodes$adoption_date &gt; month |  cleaned_nodes$adoption_date == &quot;Inf&quot;)), 1, prop_peer_pressure), na.rm = TRUE)
 }
 
 all.month.same = apply(as.array(1:17), 1, samemonthprop)
-all.month.same&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  [1] 0.2318182 0.2370851 0.2623106 0.4525000 0.2698052 0.7060606 0.7743590
+all.month.same</code></pre>
+<pre><code>##  [1] 0.2318182 0.2370851 0.2623106 0.4525000 0.2698052 0.7060606 0.7743590
 ##  [8] 0.7477891 0.7666667 1.0000000 0.9166667 0.5000000 0.6666667 0.8750000
-## [15] 1.0000000 0.5000000 0.6666667&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.month.later = apply(as.array(1:17), 1, latermonthsprop)
-all.month.later&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  [1] 0.6382065 0.6746720 0.7109236 0.7428277 0.8171599 0.8378733 0.8558230
+## [15] 1.0000000 0.5000000 0.6666667</code></pre>
+<pre class="r"><code>all.month.later = apply(as.array(1:17), 1, latermonthsprop)
+all.month.later</code></pre>
+<pre><code>##  [1] 0.6382065 0.6746720 0.7109236 0.7428277 0.8171599 0.8378733 0.8558230
 ##  [8] 0.8752137 0.8842593 0.8809524 0.8763441 0.9022989 0.9294872 0.9393939
-## [15] 0.9259259 0.9791667 1.0000000&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;y1 = all.month.same
+## [15] 0.9259259 0.9791667 1.0000000</code></pre>
+<pre class="r"><code>y1 = all.month.same
 y2 = all.month.later
 
 ##one way to plot 
-plot(x = c(1:17), y1, ylim=range(c(y1,y2)), col = &amp;quot;red&amp;quot;, xlab = &amp;quot;month&amp;quot;, ylab = &amp;quot;proportion of contacts prescribing&amp;quot;)
+plot(x = c(1:17), y1, ylim=range(c(y1,y2)), col = &quot;red&quot;, xlab = &quot;month&quot;, ylab = &quot;proportion of contacts prescribing&quot;)
 par(new = TRUE)
-plot(x = c(1:17), y2, ylim = range(c(y1,y2)), col = &amp;quot;green&amp;quot;, xlab = &amp;quot;month&amp;quot;, ylab = &amp;quot;proportion of contacts prescribing&amp;quot;)
+plot(x = c(1:17), y2, ylim = range(c(y1,y2)), col = &quot;green&quot;, xlab = &quot;month&quot;, ylab = &quot;proportion of contacts prescribing&quot;)
 
 
 
@@ -456,23 +595,118 @@ plot(x = c(1:17), y2, ylim = range(c(y1,y2)), col = &amp;quot;green&amp;quot;, x
 ?data.frame
 
 d = data.frame(x = c(1:17), y1=all.month.same, y2=all.month.later)
-library(ggplot2)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.3.2&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.sullivanstatistics.com/post/In-Class-Project-2_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(d, aes(x=x, y=value, color=variable)) + 
-geom_point(aes(y=y1, col=&amp;quot;y1&amp;quot;, pch=2 ))+
-geom_point(aes(y=y2, col=&amp;quot;y2&amp;quot;, pch=1)) + scale_shape_identity() + labs(list(x=&amp;quot;month&amp;quot;, y=&amp;quot;proportion of contacts who have already started prescribing&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.sullivanstatistics.com/post/In-Class-Project-2_files/figure-html/unnamed-chunk-13-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diff = all.month.same - all.month.later
-diff&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  [1] -0.40638829 -0.43758691 -0.44861299 -0.29032775 -0.54735467
+library(ggplot2)</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 3.3.2</code></pre>
+<p><img src="/post/In-Class-Project-2_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(d, aes(x=x, y=value, color=variable)) + 
+geom_point(aes(y=y1, col=&quot;y1&quot;, pch=2 ))+
+geom_point(aes(y=y2, col=&quot;y2&quot;, pch=1)) + scale_shape_identity() + labs(list(x=&quot;month&quot;, y=&quot;proportion of contacts who have already started prescribing&quot;))</code></pre>
+<p><img src="/post/In-Class-Project-2_files/figure-html/unnamed-chunk-13-2.png" width="672" /></p>
+<pre class="r"><code>diff = all.month.same - all.month.later
+diff</code></pre>
+<pre><code>##  [1] -0.40638829 -0.43758691 -0.44861299 -0.29032775 -0.54735467
 ##  [6] -0.13181268 -0.08146401 -0.12742456 -0.11759259  0.11904762
 ## [11]  0.04032258 -0.40229885 -0.26282051 -0.06439394  0.07407407
-## [16] -0.47916667 -0.33333333&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(diff)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.sullivanstatistics.com/post/In-Class-Project-2_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
+## [16] -0.47916667 -0.33333333</code></pre>
+<pre class="r"><code>plot(diff)</code></pre>
+<p><img src="/post/In-Class-Project-2_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
     
-  </channel>
-</rss>
+
+    
+    <li class="next"><a href="https://www.sullivanstatistics.com/post/2015-01-01-lorem-ipsum/">Lorem Ipsum <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'mollymccarthy';
+    var disqus_identifier = 'https:\/\/www.sullivanstatistics.com\/post\/In-Class-Project-2\/';
+    var disqus_title = 'In Class Assignment Feb 28';
+    var disqus_url = 'https:\/\/www.sullivanstatistics.com\/post\/In-Class-Project-2\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2016 Molly McCarthy &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    <script async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+    
+
+  </body>
+</html>
+
