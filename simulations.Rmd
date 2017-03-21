@@ -1,0 +1,200 @@
+---
+title: "Simulations Pre-Class Project"
+date: "Due March 13, 2017 at 5:00pm"
+output:
+  html_document
+
+
+---
+
+<style type="text/css">
+.table {
+
+    width: 80%;
+    margin-left:10%; 
+    margin-right:10%;
+}
+</style>
+```{r,setup, echo=FALSE, cache=TRUE}
+## numbers >= 10^5 will be denoted in scientific notation,
+## and rounded to 2 digits
+options(scipen = 3, digits = 3)
+```
+
+
+
+
+#Project Goals:
+
+
+With this project we will simulate a famoues probability problem. This will not require knowledge of probability or statistics but only the logic to follow the steps in order to simulate this problem. This is one way to solve problems by using the computer. 
+
+ 1. **Gambler's Ruin**: Suppose you have a bankroll of $1000 and make bets of $100 on a fair game. By simulating the outcome directly for at most 5000 iterations of the game (or hands), estimate:
+    a. the probability that you have "busted" (lost all your money) by the time you have placed your one hundredth bet. 
+    b. the probability that you have busted by the time you have placed your five hundredth bet by simulating the outcome directly. 
+    c. the mean time you go bust, given that you go bust within the first 5000 hands.
+    d. the mean and variance of your bankroll after 100 hands (including busts).
+    e. the mean and variance of your bankroll after 500 hands (including busts).
+
+```{r}
+#1a.
+# start with 1,000. At start of game, lose 100. If outcome = win, then return = 200. If outcome = lose, return nothing. 
+
+
+game.sim = function(bankroll, game = as.vector(rbinom(5000,1,0.5))){
+for (i in 1:length(game)){
+if (game[i] == 1) {output = bankroll + 100}
+else {output = bankroll - 100}
+stopifnot(output > 0)
+}
+  return(output)
+}
+game.sim(1000)
+
+
+##2nd attempt: by assigning a vector to take value of either 100 if we win or -100 if we lose, and summing that vector, we can see our net total. The function only works while our sum of money is greater than our negative bankroll
+game.sim.test = function(hands, bankroll, bets, game = as.vector(rbinom(5000,1,0.5))){
+  money = rep(NA, length(hands))
+  for (i in 1:length(hands))
+    total = bankroll + (2*bets*game - bets)
+  if (sum(money) >= -bankroll) {
+    if (game[i] == 1) {money[i] = 100}
+    else {money[i] = -100}
+  return(c(total, i))}
+  else {print(c(i, "Player has gone bust"))
+  }
+}
+
+game.sim.test.2 = function(hands, bankroll, bets, game = as.vector(rbinom(5000,1,0.5))){
+  money = rep(NA, length(hands))
+  if (game[i] == 1){money[i] = bets}
+  else {money[i] = -bets}
+while(sum(money) >= -bankroll){return(bankroll + (2*bets*game - bets))}
+  }
+
+
+game.sim.test.2(50, 1000, 100)
+
+#third attempt: 
+game.sim = function(hands, game= rbinom(5000, 1, 0.5), bankroll, bets){
+  for (i in 1:hands){
+    total = bankroll + (2*bets*game[i] - bets)
+    if (total == 0) {
+      return(c(0,i))  
+    } else {
+    return(c(total,i))
+      }
+    }
+}  
+game.sim(hands = 100, bankroll = 1000, bets = 100)
+
+##patrick's 
+sim_game <- function(hands, p = 0.5, inc = 0.01, bankroll = 1000, bets = 100, markov = FALSE) {
+  total <- bankroll
+  prob <- p
+  
+  # For each hand/game
+  for (i in 1:hands) {
+    # Add/subtract wager from total
+    outcome <- rbinom(1,1,prob)
+    total <- total + (2*bets*outcome - bets)
+    # If not Markov, going bust is possible 
+    # Return 0 and the index that the player went bust
+    if (!markov) {
+      if (total == 0) {
+        return(c(0,i))
+      }
+    # If Markov, increment probability accordingly
+    } else {
+      if (outcome == 1 & prob + inc <= 1) {
+        prob <- prob + inc
+      } else if (outcome == 0) {
+        prob <- p
+      }
+    }
+  }
+  return(c(total, hands))
+}
+
+
+```
+
+ 
+Note: you *must* stop playing if your player has gone bust. How will you handle this in the `for` loop?
+
+2. Repeat the previous problem with betting on black in American roulette, where the probability of winning on any spin is 18/38 for an even payout.
+```{r}
+game = rbinom(5000, 1, 18/38)
+game
+sim_game2 <- function(hands, p = 18/38, inc = 0.01, bankroll = 1000, bets = 100, markov = FALSE) {
+  total <- bankroll
+  prob <- p
+  
+  # For each hand/game
+  for (i in 1:hands) {
+    # Add/subtract wager from total
+    outcome <- rbinom(1,1,prob)
+    total <- total + (2*bets*outcome - bets)
+    # If not Markov, going bust is possible 
+    # Return 0 and the index that the player went bust
+    if (!markov) {
+      if (total == 0) {
+        return(c(0,i))
+      }
+    # If Markov, increment probability accordingly
+    } else {
+      if (outcome == 1 & prob + inc <= 1) {
+        prob <- prob + inc
+      } else if (outcome == 0) {
+        prob <- p
+      }
+    }
+  }
+  return(c(total, hands))
+}
+
+sim_game2(500, p = 18.38, inc = 0.01, bankroll = 1000, bets = 100)
+
+#this has the same problem where it says there's a missing value where TRUE/FALSE needed
+```
+3. **Markov Chains**. Suppose you have a game where the probability of winning on your first hand is 48%; each time you win, that probability goes up by one percentage point for the next game (to a maximum of 100%, where it must stay), and each time you lose, it goes back down to 48%. Assume you cannot go bust and that the size of your wager is a constant $100.
+```{r}
+transition.matrix.1 = matrix(c(0.48, 0.52, 0.52, 0.48), nrow = 2)
+markov_chain = function(nn, transition.matrix, start = sample(1:nrow(transition.matrix), 1)) {
+  output = rep(NA, nn)
+  output[1] <- start #first value is whether or not you won the first game 
+  for(game in 2:nn){
+    prob = as.vector(output[game[-1]])
+    output[game] <- sample(ncol(transition.matrix), 1, prob)
+    stopifnot(prob >= 0 & prob < 1)}
+}
+
+markov_chain(100, transition.matrix.1)
+
+
+#prob of winning on your first hand: therefore, geometric 
+#run simulations of a geometric distribution with p = 0.48 + 0.1^number of wins before this game(1 if won the game before, 0 if lost the first game before) power should be to the sum of game
+
+markov = function(nn, wager, firstwin, start = sample(0:1, prob = c(1-firstwin, firstwin))){ 
+  #arguments: nn = number of simulations, wager = how much bet each game, firstwin = prob of winning on first game, start = 1 for win w.p. firstwin, 0 for lose w.p 1-firstwin)
+outcome = rep(NA, nn) #create an empty vector of the lenght you want 
+outcome[1] <- start #if first game is a win, then 1, if first game is lose, then 0
+for (game in 2:nn){
+  outcome[game] <-  rbinom(1, 1, prob = 0.48 + (0.1^sum(outcome[game-1])*outcome[game-1])) #at each place in the vector after the first win  game, the probability of success goes up by .1^number of wins before this game, because that is the same as .1 for each win, but if you lose, then the whole thing resets to 48
+}
+return(sum(outcome)*wager) # you end up with the wager amount times the number of games you win 
+}
+
+#this seems to work but gives error "number of items is to replace is not a multiple of replacement length"
+
+```
+
+    a. Is this a fair game? Simulate one hundred thousand sequential hands to determine the size of your return. Then repeat this simulation 99 more times to get a range of values to calculate the expectation.
+```{r}
+markov(100, 100, 0.48)
+```
+
+    b. Repeat this process but change the starting probability to a new value within 2% either way. Get the expected return after 100 repetitions. Keep exploring until you have a return value that is as fair as you can make it. Can you do this automatically?
+    c. Repeat again, keeping the initial probability at 48%, but this time change the probability increment to a value different from 1%. Get the expected return after 100 repetitions. Keep changing this value until you have a return value that is as fair as you can make it. 
+
+4. For the last two examples in the previous question, you calculated a mean value. Because you saved these final results in a vector, use the bootstrap to estimate the variance of the return in each case for your final answer. Once you have these results, which game has the smaller variance in returns?
